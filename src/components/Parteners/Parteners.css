@@ -1,0 +1,137 @@
+.parteners {
+    padding: 3rem 0rem;
+    background-image: url('../../assets/history-gis-future-narrow-1-1.jpg.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 3rem;
+}
+
+.parteners h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.parteners .partener-item {
+    flex-basis: 100%;
+    color: #fff;
+    padding: 0 0rem;
+    margin-top: 2rem;
+}
+
+.parteners .partener-item .inner {
+    max-width: 220px;
+    height: 220px;
+    position: relative;
+    padding: 1rem;
+    margin: auto;
+    box-shadow: 0 0 100px 0px #244b75;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 50%;
+    transform: scale(0.8);
+    overflow: hidden;
+    background-color: #fff;
+    transition: border-radius 0.3s, transform 0.5s 0.1s, background-color 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.parteners .partener-item .inner:hover {
+    border-radius: 2rem;
+    transform: scale(1);
+    background-color: #326AA7;
+}
+
+.parteners .partener-item .inner h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.parteners .partener-item .inner p {
+    font-weight: 200;
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+}
+
+.parteners .partener-item .inner button {
+    text-transform: capitalize;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.parteners .partener-item .inner .partener-info {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.parteners .partener-item .inner:hover .partener-info {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.parteners .partener-item .inner .partener-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: right;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.parteners .partener-item .inner:hover .partener-logo {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+}
+
+.parteners .partener-item .inner img {
+    width: 180px;
+}
+
+@media(min-width: 355px) {
+    .parteners .partener-item .inner {
+        max-width: 270px;
+        height: 270px;
+        padding: 1.5rem;
+    }
+    .parteners .partener-item .inner h3 {
+        font-size: 1.5rem;
+    }
+    .parteners .partener-item .inner p {
+        font-size: 0.75rem;
+    }
+}
+@media(min-width: 450px) {
+    .parteners .partener-item .inner {
+        max-width: 350px;
+        height: 350px;
+        padding: 2rem;
+    }
+    .parteners .partener-item .inner h3 {
+        font-size: 2rem;
+    }
+    .parteners .partener-item .inner p {
+        font-size: 1rem;
+    }
+}
+@media(min-width: 670px) {
+    .parteners .partener-item .inner {
+        max-width: 400px;
+        height: 400px;
+        padding: 3rem;
+    }
+    .parteners .partener-item .inner h3 {
+        font-size: 2.5rem;
+    }
+}
+@media(min-width: 1024px) {
+    .parteners .partener-item {
+        flex-basis: 50%;
+    }
+}

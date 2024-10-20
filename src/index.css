@@ -1,0 +1,118 @@
+/* Google fonts - import font : Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.3rem;
+}
+
+*::selection{
+  background-color: #aaaaaa;
+  color: white;
+}
+
+/* setting up the container & breakpoints */
+.container{
+  padding: 0 0.75rem;
+  margin: auto;
+}
+.container > div{
+  padding-right: 45px;
+}
+
+/* sm */
+@media(min-width : 640px){
+  .container{
+    max-width: 640px;
+    padding: 0 1.5rem;
+  }
+}
+/* md */
+@media(min-width : 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+/* lg */
+@media(min-width : 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+/* xl */
+@media(min-width : 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+/* 2xls */
+@media(min-width : 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+/* --------------------------------------------------------- */
+
+/* custom classes */
+.xy-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.bg-gray-color{
+  background-color: #F2F2F2;
+}
+.text-gray-color{
+  color: #aaaaaa;
+}
+.bg-blue-color{
+  background-color: #326AA7;
+}
+.bg-dark-blue-color{
+  background-color: #0F3E6D;
+}
+.text-blue-color{
+  color: #326AA7;
+}
+.list-unstyle{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.special-heading{
+  text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+@media(min-width : 300px){
+  .special-heading{
+      font-size: 3rem;
+  }
+}

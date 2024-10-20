@@ -1,0 +1,84 @@
+footer {
+    padding: 1.5rem 0;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+footer .container > div{
+    position: relative;
+    transition: 0.8s;
+}
+
+footer .logo {
+    width: 200px;
+    margin: 0 auto 1rem;
+}
+
+footer .logo img {
+    width: 100%
+}
+
+footer .contact-input {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid rgb(22, 58, 90);
+    border-radius: 0.3rem;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+footer .contact-input input {
+    flex-grow: 1;
+    outline: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: #f9f9f9;
+}
+
+footer .contact-input button{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media(min-width : 450px){
+    footer .contact-input {
+        max-width: 80%;
+    }
+    footer .contact-input button{
+        width: fit-content;
+    }
+}
+
+footer .contact-input button:hover{
+    background-color: rgb(22, 87, 152);
+}
+
+footer .contact-links > ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+footer .contact-links > ul li{
+    width: 40px;
+    height: 40px;
+    margin:  0 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer .contact-links > ul li:hover{
+    background-color: rgb(22, 87, 152);
+    transform: scale(1.2);
+}

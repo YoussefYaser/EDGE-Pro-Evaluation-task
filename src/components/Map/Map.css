@@ -1,0 +1,22 @@
+.map{
+    background: linear-gradient(180deg, #ededed, #fff);
+}
+
+.map .container > div{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: calc(70vh - 5.3rem);
+}
+
+@media(min-width : 640px){
+    .map .container > div{
+        height: calc(100vh - 5.3rem);
+    }
+}
+
+.map .leaflet-container{
+    height: 100%;
+    border: 3px solid #0F3E6D;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 0 rgb(177, 177, 177);
+}

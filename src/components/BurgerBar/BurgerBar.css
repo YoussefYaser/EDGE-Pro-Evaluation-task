@@ -1,0 +1,112 @@
+#burger-toggler{
+    background-color: transparent; 
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+#burger-toggler div{
+    --toggler-width: 1.5625rem;  /*25px*/
+    --toggler-height: var(--toggler-width);
+    --toggler-bg: transparent;
+    --bar-transition: 0.3s;
+    --bar-height: 0.125rem;  /*2px*/
+    /* ----------------------------------------------- */
+    width: var(--toggler-width);
+    height: var(--toggler-height);
+    background-color: var(--toggler-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+#burger-toggler div span, 
+#burger-toggler.collapsed div span{
+    width: 100%;
+    border: var(--bar-height) solid rgb(255, 255, 255);
+    transition:  var(--bar-transition);
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    box-sizing: border-box;
+}
+
+#burger-toggler.collapsed div span.bar-middle{
+    opacity: 1;
+}
+
+#burger-toggler div .bar-middle{
+    opacity: 0;
+} 
+
+
+#burger-toggler div .bar-top{
+    top: 0;
+    transform: translateY(0%) rotate(0deg);
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bar-top-forward{
+    50%{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    100%{
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+}
+
+@keyframes bar-top-backward{
+    0%{
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    50%{
+        top: 50%;
+        transform: translateY(-50%) rotate(0deg);
+    }
+    100%{
+        top: 0%;
+        transform: translateY(0%) rotate(0deg);
+    }
+}
+
+#burger-toggler div .bar-bottom{
+    bottom: 0;
+    transform: translateY(0%) rotate(0deg);
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bar-bottom-forward{
+    50%{
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+    100%{
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+    }
+}
+
+@keyframes bar-bottom-backward{
+    0%{
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+    }
+    50%{
+        bottom: 50%;
+        transform: translateY(50%) rotate(0deg);
+    }
+    100%{
+        bottom: 0%;
+        transform: translateY(0%) rotate(0deg);
+    }
+}
+
