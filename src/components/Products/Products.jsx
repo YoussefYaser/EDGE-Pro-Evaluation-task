@@ -8,7 +8,7 @@ import { forwardRef, useCallback, useEffect, useRef, useState } from 'react'
 const Products = forwardRef(function Products(props, {sections}) {
 
     //set a specfic img to be scaled
-    let [hoverImg, setHoverImg] = useState('');
+    let [hoverImg, setHoverImg] = useState(null);
 
     //hover img
     const handleHoverImg = useCallback((e) => {
